@@ -13,6 +13,8 @@ date'''
         stage('test') {
           steps {
             echo 'test step'
+            sh '''cat
+whoami'''
           }
         }
 
@@ -25,7 +27,7 @@ date'''
       }
     }
 
-    stage('deploy/sleep') {
+    stage('deploy') {
       steps {
         echo 'deploy'
         sleep 30
