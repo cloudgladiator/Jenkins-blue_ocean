@@ -29,8 +29,7 @@ whoami'''
 
     stage('deploy') {
       steps {
-        echo 'deploy'
-        sleep 30
+        sh 'whoami'
       }
     }
 
